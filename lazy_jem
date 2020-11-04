@@ -1,0 +1,31 @@
+#include <bits/stdc++.h> 
+
+using namespace std;
+int main(){
+      int t;
+      cin>>t;
+      while(t--){
+            long long int n,b,m,s,t=0;
+            cin>>n>>b>>m;
+            long int a=2;
+            while(n!=0){
+                  if(n%2==0){
+                        s=n/2;
+                        
+                  }
+                  else
+             {     s=(n+1)/2;
+            }
+              t=t+(s*m)+b;
+              n=n-s;
+              m=a*m;
+              
+                 
+            }
+           cout<<t-b<<endl;  
+            
+            
+      }
+
+return 0;
+}
